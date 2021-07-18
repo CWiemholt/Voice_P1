@@ -1,0 +1,43 @@
+<!--
+Cody Wiemholt
+CS410 Voice Assistants Summer 2021
+Homework 3
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Assistants HMWRK 3</title>
+
+    <link rel="stylesheet" href = "style.css"/>
+
+</head>
+<body>
+
+    <main class="container text-center mx-auto mt-5">
+        <h1>Web Speech Assignment</h1><br><br>
+        <h2>
+            Use-Case: Making an appointment.
+        </h2>
+
+
+        <form>
+            <label for="aname">Name</label><br>
+            <input type ="text" id ="aname" name="aname" onfocusin="handleListening(event,'aname')" onfocusout="handleStopListening(event, 'aname')"><br>
+            <label for="descript">Description</label><br>
+            <input type ="text" id ="descript" name="descript" onfocusin="handleListening(event,'descript')" onfocusout="handleStopListening(event, 'descript')"><br>
+            <label for="date">Date</label><br>
+            <input type ="text" id ="date" name="date" onfocusin="handleListening(event,'date')" onfocusout="handleStopListening(event, 'date')"><br>
+            <label for="time">Time</label><br>
+            <input type ="text" id ="time" name="time" onfocusin="handleListening(event,'time')" onfocusout="handleStopListening(event, 'time')"><br><br>
+            <input type="submit" value = "Submit">
+
+        </form>
+        <br><br>
+            <button class ="btn btn-info" id="info">Info</button>
+            <button class ="btn btn-use" id="usage">Usage</button>
+    </main>
+    <script defer src ="JS/app2.js"></script>
+</body>
+</html>

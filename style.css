@@ -1,0 +1,27 @@
+/*
+Cody Wiemholt
+CS410 Voice Assistants Summer 2021
+Homework 3
+ */
+body {
+    background-color: #121212;
+    color: #fafafa;
+}
+h1 {
+    font-size: 36px;
+}
+
+h2    {
+    font-size: 26px;
+}
+.btn{
+    font-size: 26px;
+}
+
+.btn-info{
+    background-color: forestgreen;
+}
+
+.btn-use{
+    background-color: aqua;
+}
